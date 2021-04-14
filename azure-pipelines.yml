@@ -41,7 +41,7 @@ stages:
     
     - task: CopyFiles@2
       inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)/k8'
+        SourceFolder: '$(System.DefaultWorkingDirectory)/k8s'
         Contents: '**'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
         OverWrite: true
