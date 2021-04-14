@@ -4,7 +4,7 @@ trigger:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'c3e04115-b497-40e5-abfe-a41cdad4e1f8'
-  imageRepository: 'omsapp'
+  imageRepository: 'andbackapp'
   containerRegistry: 'scynitecr'
   tag: '$(Build.BuildId)'
   vmImageName: 'ubuntu-latest'
