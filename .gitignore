@@ -1,0 +1,50 @@
+*.dll
+*.cache
+*.pdb
+Debug
+packages
+Tools
+Scripts
+bin
+content
+EntityFramework.6.1.0
+Modernizr.2.6.2
+Microsoft.Owin.Security.OAuth.2.1.0
+dotnet5.4
+log4net.2.0.7
+netcore45
+net45
+net40
+build
+portable-net40%2Bsl5%2Bwp80%2Bwin8%2Bwpa81
+portable-net45%2Bwp80%2Bwin8%2Bwpa81
+netstandard1.1
+Microsoft.Net.Compilers.1.0.0
+net46
+net20
+net35
+.vs
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out 
+*.pdb
+*.log
+bin/
+obj/
+packages/
+*.suo
+*.user
+App.config
+/src/.idea/.idea.OrderManagementSystem
+/src/OrderManagementSystem/Properties/PublishProfiles
+/src/OrderManagementSystem.API/Properties/PublishProfiles
+/src/OrderManagementSystem.API/Properties/ServiceDependencies/omsservice - Web Deploy

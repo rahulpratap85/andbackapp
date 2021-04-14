@@ -1,0 +1,38 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: andbackapp-deployment
+    labels:
+        app: andbackapp
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: andbackapp
+    template: 
+        metadata:
+            labels:
+                app: andbackapp
+        spec:
+            containers:
+            - name: k8s-oms
+              image: scynitecr.azurecr.io/andbackapp
+              ports:
+              - containerPort: 80
+            imagePullSecrets:
+            - name: regdemo
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: andbackapp
+    labels:
+        app: andbackapp
+spec:
+    ports:
+        - name: http-port
+          port: 80
+          targetPort: 80
+    selector: 
+        app: andbackapp
+    type: LoadBalancer
