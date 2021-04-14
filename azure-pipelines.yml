@@ -3,7 +3,7 @@ trigger:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'c3e04115-b497-40e5-abfe-a41cdad4e1f8'
+  dockerRegistryServiceConnection: '14105c16-ca84-4be7-ab4a-13f67694dc0f'
   imageRepository: 'andbackapp'
   containerRegistry: 'scynitecr'
   tag: '$(Build.BuildId)'
